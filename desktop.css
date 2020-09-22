@@ -1,0 +1,117 @@
+/* FOOTER */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* BODY */
+
+body {
+    font-family: "Spartan";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.body {
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+}
+
+/* body_top */
+
+.body_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+
+.body_top_left {
+    width: 30%;
+    margin: 15px;
+}
+
+.body_top_title {
+    color: hsl(300, 43%, 22%);
+    font-weight: bold;
+    font-size: 30px;
+    width: 60%;
+}
+
+.body_top_title > span {
+    font-size: 35px;
+}
+
+.body_top_info {
+    color: hsl(303, 10%, 53%);
+    width: 80%;
+}
+
+/* stars */
+
+.rated_stars {
+    width: 30vw;
+    height: 45px;
+    background-color: #c8b8cca8;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.bg_stars {
+    background: url(./images/icon-star.svg) repeat-x;
+    background-size: cover;
+}
+
+/* body_bottom */
+
+.body_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.body_bottom_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(300, 43%, 22%);
+    margin: 15px;
+    padding: 30px;
+    width: 14vw;
+    height: 24vh;
+    border-radius: 5px;
+}
+
+.info_perso {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.body_bottom_div > div > div > img {
+    border-radius: 60px;
+    height: auto;
+    width: 45%;
+}
+
+.names {
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    font-weight: 700;
+}
+
+.pinky_buyer {
+    color: hsl(333, 80%, 67%);
+    margin: 0;
+}
+
+.info_text {
+    color: hsl(300, 24%, 96%);
+}
