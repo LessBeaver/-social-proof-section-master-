@@ -24,15 +24,23 @@ body {
 /* body_top */
 
 .body_top {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90%;
+    display: grid;
+    grid-template-columns: 25vw 30vw;
+    grid-template-rows: auto;
+    width: 80%;
+    margin: 30px auto;
 }
 
 .body_top_left {
-    width: 30%;
-    margin: 15px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 15px;
+}
+
+.body_top_right {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    padding: 15px;
 }
 
 .body_top_title {
@@ -51,10 +59,23 @@ body {
     width: 80%;
 }
 
+.useless {
+    display: none;
+}
+
 /* stars */
 
+.body_top_stars {
+    display: grid;
+    grid-template-columns: 5% 5% 5%;
+    grid-template-rows: 17% 17% 17%;
+}
+
 .rated_stars {
-    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
     height: 45px;
     background-color: #c8b8cca8;
     padding: 5px 15px;
@@ -62,19 +83,60 @@ body {
     border-radius: 5px;
 }
 
+.rated_a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.rated_b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.rated_c {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
 .bg_stars {
     background: url(./images/icon-star.svg) repeat-x;
-    background-size: cover;
+    width: 85px;
+    height: auto;
 }
 
 /* body_bottom */
 
 .body_bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw;
+    grid-template-rows: 2vh 2vh 2vh;
     width: 80%;
-    margin: auto;
+    margin: 30px auto;
+}
+
+.perso_a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.perso_b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.perso_c {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 
 .body_bottom_div {
@@ -85,7 +147,7 @@ body {
     margin: 15px;
     padding: 30px;
     width: 14vw;
-    height: 24vh;
+    height: 17vh;
     border-radius: 5px;
 }
 
